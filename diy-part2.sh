@@ -13,7 +13,7 @@ sed -i 's/192.168.1.1/192.168.1.254/g' package/base-files/files/bin/config_gener
 
 #custom your packages
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
-git clone -b master  https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+#git clone -b master  https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 
 #svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-netdata package/luci-app-netdata && svn revert -R package/luci-app-netdata
 #svn co --force https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-zerotier package/luci-app-zerotier && svn revert -R package/luci-app-zerotier
@@ -28,6 +28,6 @@ git clone -b master  https://github.com/vernesong/OpenClash.git package/luci-app
 #sed  -i '/dependencies/a\\$(curdir)/upx/compile := $(curdir)/ucl/compile' tools/Makefile
 
 #update golang
-pushd feeds/packages/lang
-rm -rf golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
-popd
+#pushd feeds/packages/lang
+#rm -rf golang && svn co https://github.com/openwrt/packages/trunk/lang/golang
+#popd
